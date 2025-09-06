@@ -16,7 +16,7 @@ html {
 body {
     width: 100%;
     height: fit-content;
-    
+    background-color: aqua;
     font-family: 'pin';
 }
 
@@ -25,16 +25,22 @@ a {
     color: aliceblue;
 }
 
+.page-wrapper {
+    padding: 2rem;
+}
+
 /*Header*/
 
 .header,
 .footer {
+    flex: auto;
     height: 1.5;
     display: flex;
     justify-content: space-between;
     padding: 1rem 10rem;
     color: aliceblue;
     background-color: #8da06f;
+    
 }
 
 nav a {
@@ -58,15 +64,30 @@ main {
     
 }
 
-.layer1L {
-    color: white;
-      padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.layer1L .layer1R {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.layer1 .title {
+
+.layer1L {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 86%;
+    margin: 3em 2em 3em 5em;
+    flex: 1 1 300px;
+}
+
+.layer1R {
+    flex: 0 0 270px;
+    margin: 3em 1em;
+}
+
+
+.layer1L .title {
     font-size: 48px;
     font-weight: 900;
 }
@@ -77,10 +98,6 @@ main {
     text-align:start;
 }
 
-.layer1R {
-    flex: 0 0 270px;
-    margin: 3em 1em;
-}
 
 .layer1R img {
     max-width: 800px;
@@ -89,7 +106,17 @@ main {
 }
 
 
+.layer1L .button {
+    display: inline-block;
+    margin-top: 15px;
+}
+
 .button {
+    display: inline-block;
+    width: auto;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8em 1.5em;
 }
 
 /*Layer 2 pictures*/
@@ -148,5 +175,4 @@ main {
     align-items: flex-end;
     justify-content: center;
     padding: 16px;
-    font-family: 'pin';
 }
