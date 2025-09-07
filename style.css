@@ -36,6 +36,7 @@ section {
 
 button {
   background-color: aliceblue;
+  border: 1px solid #1e4639;
   padding: 0.8em 1.5em;
   line-height: 10px;
   text-align: center;
@@ -43,6 +44,12 @@ button {
   height: 40px;
   border-radius: 10px;
   font-size: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 /* background video*/
@@ -166,6 +173,7 @@ main {
 .p1, .p2, .p3, .p4 {
     width: 200px;
     height: auto;
+    text-align: center;
 }
 
 .pictures img {
@@ -174,10 +182,6 @@ main {
     border: 0.2em solid black;
     border-radius: 0.9em;
     display: flex;
-}
-
-.picture p {
-    text-align: center;
 }
 
 /*Layer 3 quote*/
@@ -198,9 +202,9 @@ main {
     justify-content: flex-end;
 }
 .quote {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
-    width: 50rem;
+    width: 60rem;
     height: auto;
 }
 
